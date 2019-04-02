@@ -1,0 +1,114 @@
+@font-face {
+font-family: "Chivo";
+src: url("css/fonts/Chivo/Chivo-Regular.eot");
+src:
+url("css/fonts/Chivo-Regular.ttf") format("ttf"),
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Chivo', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #212121;
+
+}
+
+h2{
+    font-weight: normal;
+    color: white;
+}
+
+#container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+   display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: stretch;
+}
+
+.navbar{
+    width:80%;
+    height: 60px;
+    background-color: rgba(0,0,0,.8);
+    line-height: 60px;
+    padding-left: 10%;
+    padding-right:10%;
+    position: fixed;
+    top: 0;
+
+}
+
+.nav-right{
+    float: right;
+}
+
+.navbar a{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.navbar a:hover{
+    color: #fbb040;
+}
+
+.headerButtons{
+
+}
+
+.headerButtons > button{
+    width: 150px;
+    height: 50px;
+    margin: 15px;
+    background-color: #212121;
+    color: #fbb040;
+    font-weight: bold;
+    border-color: #fbb040;
+
+}
+
+.headerButtons > button:hover{
+    width: 155px;
+    height: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #fbb040;
+    transition: 500ms;
+
+}
+
+.content{
+    grid-column: span 12;
+    background-color: white;
+}
+
+.header{
+    margin-top: 90px;
+    grid-column: span 12;
+    text-align: center;
+}
+
+.headerText{
+    margin-top: 10px;
+}
+
+.jumbotron{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%
+}
+
+.footer{
+    grid-column: span 12;
+
+}
