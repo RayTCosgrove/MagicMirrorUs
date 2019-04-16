@@ -15,6 +15,8 @@ url("css/fonts/Chivo-Regular.ttf") format("ttf"),
 
 }
 
+
+
 html{
     background-color: #212121;
     height: 10000px;
@@ -31,16 +33,18 @@ h2{
 
 
 
+
 #container{
-    width: 80%;
-    margin: 20px;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     display:grid;
     grid-auto-columns: 1fr;
-    justify-items: stretch;
-    grid-gap: 0px;
-    padding-top: 100px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    grid-row-gap: 60px;
+
+
 
 }
 
@@ -52,17 +56,24 @@ h2{
 
 }
 .item > h2{
-    margin: 10px;
+    color: #fbb040;
+    margin: 20px;
 }
 
 .item > h1{
     color: #fbb040;
     margin-bottom: 10px;
+    margin-top: 60px;
+    font-size: 45px;
+
+}
+.item > h3{
+    margin: 20px;
 }
 
 .navbar{
     width:80%;
-    height: 60px;
+    height 60px;
     background-color: rgba(0,0,0,.4);
     line-height: 60px;
     padding-left: 10%;
@@ -93,16 +104,18 @@ h2{
     text-align: center;
      background-image: url(../images/adventure-calm-clouds-414171.jpg);
     height: 100vh;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
     .jumbotron{
 
-    margin-top: 100px;
+    margin-top: 12.5vh;
     margin-right: auto;
     margin-left: auto;
-    width: 35%;
+    height: 40vh;
 }
 
     .header h2{
@@ -147,14 +160,19 @@ h2{
     color: white;
 
 }
+
+
     .promise{
-        margin: 10px;
+        margin: 5px;
         grid-column: span 4;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        height: 300px;
+        height: auto;
+        padding: 20px;
         background-color: #303030;
         border: none;
         text-align: center;
+        border-radius: 5px;
+
     }
 
 
@@ -173,6 +191,12 @@ h2{
 .flicker > a{
     text-decoration: none;
     color: white;
+    position: absolute;
+    bottom:10px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
     .scroll{
@@ -185,7 +209,7 @@ h2{
     }
 
 /*
-Animation to flicker learn more and scroll image in and out.
+Animation to flicker learn more and scroll image in and out. ------------------------
 */
 @keyframes flickerAnimation {
   0%   { opacity:1; }
@@ -209,9 +233,39 @@ Animation to flicker learn more and scroll image in and out.
 }
 
 
+/*
+All the CSS required for the carousel slider -------------------------------------
+*/
+
+section#carousel{
+    margin: 20px;
+}
+section#carousel > figure > img {
+    display: none;
+    margin: 20px auto;
+}
+
+section#carousel > figure.visible > img {
+display: block;
+position: relative;
+overflow: hidden;
+}
+
+section#carousel > figure > figcaption {
+display: none;
+}
+
+section#carousel > figure.visible > figcaption {
+display: block;
+text-align: center;
+font-weight: bold;
+font-size: 1.5em;
+}
+
 
 
 .footer{
     grid-column: span 12;
 
 }
+.material-icons.md-48 { font-size: 96px; color: #fbb040  }
